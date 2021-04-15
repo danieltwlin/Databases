@@ -1,0 +1,12 @@
+查詢筆數
+COUNT() 函數查詢用法 (Example)
+假設我們想從 orders 資料表中查詢 "張一" 總共有幾筆訂單：
+
+我們可以下這個 SELECT 查詢敘述句：
+SELECT COUNT(Customer) FROM orders WHERE Customer='張一';
+
+返回的結果如下：
+COUNT(Customer)
+2
+
+
