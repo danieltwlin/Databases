@@ -1,0 +1,25 @@
+備份單一資料庫
+# mysqldump -h hostname -u root -p database_name > backup.sql;
+# mysqldump -h localhost -u root -p learncenter > learncenter.sql;
+
+備份資料庫中單一資料表
+# mysqldump -u root -p database_name table_name > backup.sql;
+備份資料庫中多張資料表
+# mysqldump -u root -p database_name table1 table2 > backup.sql;
+備份多個資料庫
+# mysqldump -u root -p --databases db1 db2 > backup.sql;
+備份所有資料庫
+# mysqldump -u root -p --all-databases > backup.sql;
+
+
+Mysqldump引數大全（引數來源於mysql5.5.19原始碼） 
+--all-databases  , -A
+匯出全部資料庫。
+mysqldump  -uroot -p --all-databases
+--all-tablespaces  , -Y
+匯出全部表空間。
+mysqldump  -uroot -p --all-databases --all-tablespaces
+--no-tablespaces  , -y
+不匯出任何表空間資訊。
+mysqldump  -uroot -p --all-databases --no-tablespaces
+
