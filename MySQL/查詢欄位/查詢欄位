@@ -1,0 +1,1 @@
+select 欄位名 from 資料表名稱 where 欄位名 like '%字串%';
