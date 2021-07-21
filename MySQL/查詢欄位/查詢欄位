@@ -3,4 +3,8 @@
 select 欄位名 from 資料表名稱 where 欄位名 like '%字串%';
 
 
+# 查詢區間範圍
+SELECT * FROM customers
+WHERE Quantity
+BETWEEN 1000 AND 4000;
 
